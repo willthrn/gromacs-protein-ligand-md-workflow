@@ -1,0 +1,3 @@
+grep XXX protein.pdb > ligand.pdb
+grep -v HETATM protein.pdb > protein_processed.pdb
+gmx pdb2gmx -f protein_processed.pdb -o protein_processed.gro -water spc
