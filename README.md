@@ -99,11 +99,26 @@ gmx trjconv -s md.tpr -f md.xtc -o md_corrected.xtc -pbc mol -ur compact -center
 B. Quantitative Structural Metrics
 Extract trajectory metrics into Grace (.xvg) format for publication plotting:
 
-Root-Mean-Square Deviation (RMSD): ```gmx rms -s md.tpr -f md_corrected.xtc -o xvg/rmsd.xvg```
-Root-Mean-Square Fluctuation (RMSF): ```gmx rmsf -s md.tpr -f md_corrected.xtc -o xvg/rmsf.xvg -res```
-Radius of Gyration ($R_g$): ```gmx gyrate -s npt.gro -f md_corrected.xtc -o xvg/gyration.xvg```
-Hydrogen Bond Dynamics: ```gmx hbond -s md.tpr -f md_corrected.xtc -num xvg/hbond.xvg```
-Downsampled Trajectory (100 Frames): ```gmx trjconv -f md.xtc -s md_corrected.tpr -o reduced.xtc -dt 1000```
+Root-Mean-Square Deviation (RMSD): 
+```
+gmx rms -s md.tpr -f md_corrected.xtc -o xvg/rmsd.xvg
+```
+Root-Mean-Square Fluctuation (RMSF): 
+```
+gmx rmsf -s md.tpr -f md_corrected.xtc -o xvg/rmsf.xvg -res
+```
+Radius of Gyration ($R_g$): 
+```
+gmx gyrate -s npt.gro -f md_corrected.xtc -o xvg/gyration.xvg
+```
+Hydrogen Bond Dynamics: 
+```
+gmx hbond -s md.tpr -f md_corrected.xtc -num xvg/hbond.xvg
+```
+Downsampled Trajectory (100 Frames): 
+```
+gmx trjconv -f md.xtc -s md_corrected.tpr -o reduced.xtc -dt 1000
+```
 
 📊 Summary of Extracted Structural Analysis
 Energy, temperature, pressure, and structural trajectory graphs can be visualized using XMGRACE:
