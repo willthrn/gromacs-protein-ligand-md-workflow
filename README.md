@@ -1,5 +1,3 @@
-# gromacs-protein-ligand-md-workflow
-
 # Protein-Ligand Molecular Dynamics Workflow (GROMACS + CHARMM36)
 
 This repository contains an end-to-end command-line workflow for setting up, running, and analyzing a **protein-ligand molecular dynamics (MD) simulation** using **GROMACS** under a Linux/WSL environment.
