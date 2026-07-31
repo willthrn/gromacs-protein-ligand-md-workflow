@@ -107,26 +107,3 @@ Energy, temperature, pressure, and structural trajectory graphs can be visualize
 
 xmgrace xvg/rmsd.xvg
 xmgrace xvg/rmsf.xvg
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
